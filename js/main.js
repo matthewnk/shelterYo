@@ -23,27 +23,27 @@ $.each(cats, function(index,entry) {
 		'</div>')
   });
 
- // $.each(cats, function(id) {
- //    $('#list').append('<li id="' + (id+1) + '"><img src="./img/'+ cats[id].url +'">')
- //    		  .append('<h3>' + cats[id].name + '</h3>')
- //    		  .append('<p>' + cats[id].about + '</p>');
- //    $('li').addClass('items');
- //    console.log(cats[id].url);
- //  });
+ $.each(cats, function(id) {
+    $('#list').append('<li id="' + (id+1) + '"><img src="./img/'+ cats[id].url +'">')
+    		  .append('<h3>' + cats[id].name + '</h3>')
+    		  .append('<p>' + cats[id].about + '</p>');
+    $('li').addClass('items');
+    console.log(cats[id].url);
+  });
 
 
-// $.each(cats, function(id) {
-//     $('#list').append('<hr class="featurette-divider">' + 
-//     	'<div class="row featurette">'+
-//     		'<div class="col-md-7 col-md-push-5">' +
-//     			'<h2 class="featurette-heading">' + cats[id].name + '</h2>' +
-//     			'<p class="lead">' + cats[id].about + '</p>' +
-//     		'</div>' +
-// 			'<div class="col-md-5 col-md-pull-7">' +
-// 				'<img class="featurette-image img-responsive center-block img-circle" src="./img/'+ cats[id].url +'" width="304" height="236">' +
-// 			'</div>'+
-// 		'</div>')
-//   });
+$.each(cats, function(id) {
+    $('#list').append('<hr class="featurette-divider">' + 
+    	'<div class="row featurette">'+
+    		'<div class="col-md-7 col-md-push-5">' +
+    			'<h2 class="featurette-heading">' + cats[id].name + '</h2>' +
+    			'<p class="lead">' + cats[id].about + '</p>' +
+    		'</div>' +
+			'<div class="col-md-5 col-md-pull-7">' +
+				'<img class="featurette-image img-responsive center-block img-circle" src="./img/'+ cats[id].url +'" width="304" height="236">' +
+			'</div>'+
+		'</div>')
+  });
 
 
 
